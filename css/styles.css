@@ -19,6 +19,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+@font-face {
+    font-family: kingfont;
+    src: url(../resources/droid-serif/DroidSerif-Italic.ttf);
+}
+
 /* styles */
 
 :root {
@@ -28,15 +33,18 @@
     --orange: #FFA644;
     --blue: #3498db;
     --white: #ffffff;
+    --kinglightblue: #00DAFF;
+    --notsoblack: #34495e;
+    --black: #000000;
 }
 
 body {
     background-color: var(--white);
-    font-family: 'Ubuntu', sans-serif;
-    color: #34495e;
+    color: var(--black);
     font-family: 'PT Sans', sans-serif;
     font-weight: 100;
     font-size: 0.9em;
+
 }
 
 main {
@@ -72,6 +80,8 @@ h2 {
 p {
     margin-bottom: 1em;
     padding: 0 10px;
+    text-align: justify;
+    text-justify: auto;
 }
 
 .info-link {
@@ -115,7 +125,7 @@ section {
 
 .bigtitle-title {
     color: white;
-    background-color: var(--darkblue);
+    background-color: var(--kinglightblue);
     margin-bottom: 10px;
     border-radius: 3px;
 }
@@ -131,8 +141,16 @@ section {
 }
 
 .portrait-vignette {
-    border-radius: 50%;
+    border-radius: 20px;
     width: 100%;
+
+}
+
+.portrait-small-vignette-wrap {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
 }
 
 @media (min-width: 620px) {
