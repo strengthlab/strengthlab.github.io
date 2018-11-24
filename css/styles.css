@@ -201,6 +201,10 @@ section {
         width: calc(100% + 40px)
     }
 
+    .portrait-small-vignette-wrap {
+        padding: 10px;
+    }
+
 }
 
 /*info---------------------------------------*/
