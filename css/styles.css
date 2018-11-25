@@ -7,8 +7,12 @@
     }
 
     .section {
-        break-inside: avoid;
+        page-break-inside: auto;
+        /* Firefox */
+        break-inside: auto;
+        /* IE 10+ */
     }
+
 }
 
 @media (min-width: 960px) {
@@ -34,6 +38,7 @@
     --blue: #3498db;
     --white: #ffffff;
     --kinglightblue: #00DAFF;
+    --complementaryking: #ff2500;
     --notsoblack: #34495e;
     --black: #000000;
 }
@@ -52,13 +57,6 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-
-header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 20px 0;
-}
-
 
 h2 {
     font-size: 1em;
@@ -118,7 +116,13 @@ maintitletext {
     font-family: 'kingfont', serif;
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 0;
+    background-color: var(--white);
+    padding: 10px;
+    width: auto;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
 }
 
 .bigtitle {
@@ -126,8 +130,8 @@ maintitletext {
 }
 
 .bigtitle-title {
-    color: var(--kinglightblue);
-    border: 1px solid var(--kinglightblue);
+    color: var(--white);
+    background-color: var(--complementaryking);
     margin-bottom: 10px;
     border-radius: 3px;
     font-size: 1.4em;
@@ -151,6 +155,10 @@ maintitletext {
     float: left;
     padding: 10px;
 
+}
+
+.allactivities {
+    break-before: column;
 }
 
 .activity-small-vignette-wrap {
@@ -184,15 +192,11 @@ maintitletext {
 
 .contactFrm {
     width: 80px;
-    bottom: 1em;
-    right: 1em;
-    z-index: 100;
+    padding-left: 1em;
 }
 
 .submit {
-    color: #FFF;
-    font-size: 1em;
-    background: rgba(255, 0, 0, 1);
+    background: var(--kinglightblue);
     transition: 0.5s all;
     border: 0;
     border-radius: 50%;
@@ -201,14 +205,19 @@ maintitletext {
     width: 80px;
     height: 80px;
     cursor: pointer;
-    padding-top: 35px;
-    padding-left: 3px;
-    font-weight: 900;
-
 }
 
 .submit:hover {
-    background: rgba(255, 0, 0, 0.5);
+    opacity: 0.5;
+}
+
+.submitcontent {
+    position: relative;
+    top: 40%;
+    left: 3px;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 
