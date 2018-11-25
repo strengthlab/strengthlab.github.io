@@ -202,7 +202,9 @@ maintitletext {
     height: 80px;
     cursor: pointer;
     padding-top: 35px;
+    padding-left: 3px;
     font-weight: 900;
+
 }
 
 .submit:hover {
@@ -229,15 +231,6 @@ maintitletext {
         width: calc(100% + 40px)
     }
 
-    .contactFrm {
-        width: 80px;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 1em;
-        right: 1em;
-        z-index: 100;
-    }
-
 }
 
 /*info---------------------------------------*/
@@ -258,4 +251,12 @@ maintitletext {
     height: 250px;
     border: 0;
     border-radius: 3px
+}
+
+.gmd-2 {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
