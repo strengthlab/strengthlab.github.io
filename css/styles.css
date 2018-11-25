@@ -3,10 +3,10 @@
 @media (min-width: 620px) {
     main {
         column-count: 2;
-        column-gap: 20px;
+        column-gap: 30px;
     }
 
-    section {
+    .section {
         break-inside: avoid;
     }
 }
@@ -59,21 +59,9 @@ header {
     padding: 20px 20px 0;
 }
 
-.main .title {
-    font-size: 2.6em;
-    text-align: center;
-    color: var(--white);
-    margin-bottom: 20px
-}
-
-.figure-img {
-    display: block;
-    width: 100%;
-    object: fit;
-}
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     padding: 10px;
 }
 
@@ -105,16 +93,32 @@ p {
     color: var(--red);
 }
 
-section {
+.section {
     background-color: white;
     margin-bottom: 20px;
-    overflow: hidden;
 }
 
-.section-img {
-    display: block;
-    padding: 10px;
-    margin: 0 auto;
+.main-title {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+maintitletext {
+    font-size: 3em;
+    text-align: left;
+    color: var(--kinglightblue);
+    padding: 0;
+    font-family: 'kingfont', serif;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
 }
 
 .bigtitle {
@@ -122,10 +126,12 @@ section {
 }
 
 .bigtitle-title {
-    color: white;
-    background-color: var(--kinglightblue);
+    color: var(--kinglightblue);
+    border: 1px solid var(--kinglightblue);
     margin-bottom: 10px;
     border-radius: 3px;
+    font-size: 1.4em;
+    padding: 10px;
 }
 
 .bigbottom-link {
@@ -133,13 +139,8 @@ section {
     color: white;
 }
 
-.profile {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 .portrait-vignette {
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
 }
 
@@ -148,6 +149,8 @@ section {
     width: 100px;
     height: 100px;
     float: left;
+    padding: 10px;
+
 }
 
 .activity-small-vignette-wrap {
@@ -179,6 +182,35 @@ section {
     font-weight: bold;
 }
 
+.contactFrm {
+    width: 80px;
+    bottom: 1em;
+    right: 1em;
+    z-index: 100;
+}
+
+.submit {
+    color: #FFF;
+    font-size: 1em;
+    background: rgba(255, 0, 0, 1);
+    transition: 0.5s all;
+    border: 0;
+    border-radius: 50%;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    padding-top: 35px;
+    font-weight: 900;
+}
+
+.submit:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+
+
 @media (min-width: 620px) {
     .options-link {
         font-size: 1.4em;
@@ -186,10 +218,6 @@ section {
 }
 
 @media (max-width: 620px) {
-    .section-img {
-        padding: 0;
-        margin: 0;
-    }
 
     .portrait-vignette {
         border-radius: 0;
@@ -201,8 +229,13 @@ section {
         width: calc(100% + 40px)
     }
 
-    .portrait-small-vignette-wrap {
-        padding: 10px;
+    .contactFrm {
+        width: 80px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1em;
+        right: 1em;
+        z-index: 100;
     }
 
 }
