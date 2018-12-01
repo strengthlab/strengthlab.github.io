@@ -194,7 +194,7 @@ maintitletext {
 
 .contactFrm {
     width: 80px;
-    padding-right: 1em;
+    padding-right: 1.5em;
 }
 
 .submit {
@@ -246,9 +246,38 @@ maintitletext {
 
 /*info---------------------------------------*/
 
+.schedule {
+    border-left: 4px solid var(--kinglightblue);
+    padding-left: 1em;
+    position: relative;
+}
+
+.map {
+    border-left: 4px solid var(--kinglightblue);
+    padding-left: 1em;
+    position: relative;
+}
+
+.contactform {
+    border-left: 4px solid var(--kinglightblue);
+    padding-left: 1em;
+    position: relative;
+}
+
+.vertical-text {
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    float: left;
+}
+
 #hoursOfOperation {
     padding-left: 0;
     text-align: left;
+}
+
+.googlemap {
+    padding-left: 1em;
+    border-radius: 2px;
 }
 
 #hoursOfOperation td {
@@ -270,4 +299,74 @@ maintitletext {
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*contact--------------------------------------------*/
+
+/*************************************************************** contactPAGE ***/
+
+.contactFrm {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.contactFrm input[type="text"],
+.contactFrm input[type="email"],
+.contactFrm input[type="password"],
+.contactFrm input[type="reset"],
+.contactFrm select {
+    width: 100%;
+    background: #CCC;
+    outline: none;
+    font-size: 0.9em;
+    padding: .7em 1em;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 2px;
+}
+
+.contactFrm textarea {
+    resize: none;
+    width: 100%;
+    background: #ccc;
+    font-size: 0.9em;
+    outline: none;
+    padding: .7em 1em;
+    border: 0;
+    min-height: 5em;
+    -webkit-appearance: none;
+    border-radius: 2px;
+}
+
+.contactFrm input[type="submit"] {
+    outline: none;
+    color: #FFF;
+    padding: 0.5em 0;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+    border: 0;
+    border-radius: 2px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contactFrm input[type="submit"]:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.contactFrm p.statusMsg {
+    font-size: 1em;
+    background-color: rgba(0, 220, 0, 0.5);
+    border-radius: 2px;
+    margin: 1em;
+    padding: 1em;
+    color: #000;
 }

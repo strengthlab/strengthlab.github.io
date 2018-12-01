@@ -104,38 +104,68 @@
 
         <div class="section" class="bigtitle">
             <h2 class="bigtitle-title">INFO</h2>
-            <table id='hoursOfOperation'>
-                <tr>
-                    <td rowspan=4>
-                        <div class="contactFrm">
-                            <div class="submit gmd-2">
-                                <div class="submitcontent">contact</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>Mon to Thu</td>
-                    <td>6am to 7pm</td>
+            <div class="schedule">
+                <div class="vertical-text">Hours</div>
+                <table id='hoursOfOperation'>
+                    <tr>
+                        <td>Mon to Thu</td>
+                        <td>6am to 7pm</td>
 
-                </tr>
-                <tr>
-                    <td>Fri</td>
-                    <td>6am to 2pm</td>
-                </tr>
-                <tr>
-                    <td>Sat</td>
-                    <td>8am to 3pm</td>
-                </tr>
-                <tr>
-                    <td>Sun</td>
-                    <td>8am to 12pm</td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td>Fri</td>
+                        <td>6am to 2pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>8am to 3pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>8am to 12pm</td>
+                    </tr>
 
-            </table>
-            <br>
+                </table>
+            </div>
         </div>
-        <div class="section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.6606173687233!2d-71.11711574921556!3d42.37107154229701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3775b56fb7e59%3A0x5491e4f5172eda42!2s12+Arrow+St+%23108%2C+Cambridge%2C+MA+02138!5e0!3m2!1sen!2sus!4v1497476881025" id='studioMapLocation' frameborder="0" allowfullscreen></iframe>
+        <div class="section map">
+            <div class="vertical-text">Location</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.6606173687233!2d-71.11711574921556!3d42.37107154229701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3775b56fb7e59%3A0x5491e4f5172eda42!2s12+Arrow+St+%23108%2C+Cambridge%2C+MA+02138!5e0!3m2!1sen!2sus!4v1497476881025" id='studioMapLocation' frameborder="0" allowfullscreen class="googlemap"></iframe>
         </div>
+
+
+
+        <div class="section contactform">
+            <div class="vertical-text">Contact</div>
+            <form action="mail.php" method="POST" class="contactFrm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="email">
+                <!--Phone
+                <input type="text" name="phone">
+
+                <p>Request Phone Call:</p>
+                Yes:<input type="checkbox" value="Yes" name="call"><br /> No:
+                <input type="checkbox" value="No" name="call"><br />
+
+                <p>Website</p> <input type="text" name="website">-->
+
+                <!--Topic
+                <select name="type" size="1">
+                    <option value="update">Classes</option>
+                    <option value="change">1 on 1 session</option>
+                    <option value="addition">General</option>
+                </select>-->
+
+
+                <textarea name="message" rows="6" cols="25" placeholder="Your message..."></textarea><br />
+                <input type="submit" value="Send">
+                <!--<input type="reset" value="Clear">-->
+            </form>
+        </div>
+
+
+
+
     </main>
 </body>
 
