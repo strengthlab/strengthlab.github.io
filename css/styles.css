@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: kingfont;
-    src: url(../resources/droid-serif/DroidSerif-Italic.ttf);
+    src: url(../resources/droid-serif/DroidSerif.ttf);
 }
 
 /* styles */
@@ -114,7 +114,7 @@ maintitletext {
     text-align: left;
     color: var(--bauhaus_blue);
     padding: 0;
-    font-family: 'kingfont', serif;
+    font-family: 'PT Sans', serif;
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -369,4 +369,40 @@ maintitletext {
     margin: 1em;
     padding: 1em;
     color: #000;
+}
+
+.online-assess {
+    border-radius: 2px;
+    border: 0 solid #FFFFFF;
+    height: auto;
+    width: 100%;
+    background-color: #FF6700;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 auto 0.5em auto;
+    position: relative;
+    transition: 0.3s;
+}
+
+.online-assess:hover {
+    opacity: 0.5;
+    color: #000000; 
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
